@@ -14,7 +14,7 @@ public class Paddle
     } 
     public int width {get; set;} = 10;
     public int height {get; set;} = 100;
-    public int speed {get; set;} = 5;
+    public int speed {get; set;} = 10;
     public Rectangle box => new Rectangle((int)pos.X, (int)pos.Y, width, height);
 
     public Paddle(Vector2 pPos)

@@ -31,12 +31,12 @@ public class Ball
         _pos += Velocity;
         if (box.Intersects(leftPaddle.box))
         {
-            Velocity.X *= -1;
+            Velocity.X *= -1.25f;
             _pos.X = leftPaddle.pos.X + leftPaddle.width;
         }
         else if (box.Intersects(rightPaddle.box))
         {
-            Velocity.X *= -1;
+            Velocity.X *= -1.25f;
             _pos.X = rightPaddle.pos.X - size;
         }
 
